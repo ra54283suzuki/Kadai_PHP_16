@@ -1,0 +1,21 @@
+1.【応用】 ProfileControllerを編集して、admin/profile/createから送信されてきた
+   フォーム情報をデータベースに保存するようにしましょう。(ヒント: NewsController 参照)
+   ⇨app/Http/Controllers/Admin/ProfileController.phpに記載
+   
+2.【応用】　1. までできたら、実際に /admin/profile/create からフォームを送信して
+   保存してみましょう。
+   ⇨保存できていることを確認
+    結果：https://gyazo.com/ffe2485c7e3cf658881dc982c2d6475e
+    
+3.【応用】 resources/views/admin/news/edit.blade.phpを参考にして、プロフィール編集
+　 画面用 に、resources/views/admin/profile/edit.blade.php ファイルを作成してください。
+　 このファイルでは layouts/profile.blade.phpファイルを読み込み、またプロフィールの
+   ページであることがわかるように titleとcontentを編集しましょう。 さらに、氏名(name)、
+   性別(gender)、趣味(hobby)、自己紹介欄(introduction)を入力するフォームを作成してください。
+   また、formの送信先(<form action=” この部分”>)を、 
+   Admin¥ProfileController の update Action に指定してください。
+   ⇨resources/views/admin/profile/edit.blade.phpに記載
+   
+4.【応用】3. ができたら、/admin/profile/edit にアクセスしてみましょう。
+   ⇨アクセス結果を確認
+    結果：https://gyazo.com/8c6b1cc817657cd5bf2d2f5e81418cba
